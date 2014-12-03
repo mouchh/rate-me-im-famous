@@ -14,3 +14,5 @@ if __name__ == '__main__':
 
 	for track in tracks:
 		bridge.setRate(track['itunesID'], track['rate'])
+
+	bridge.emptyPlaylist()
