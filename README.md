@@ -14,3 +14,4 @@ options in command line:
 	comparaison album or artist
 	empty playlist or not
 setup file
+error handling

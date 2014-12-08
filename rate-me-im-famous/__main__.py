@@ -2,7 +2,15 @@ from ratefetcher import GoogleRateFetcher
 from rateconverter import ITunesRateConverter
 from bridge import ITunesBridge
 
+import logging
+
 if __name__ == '__main__':
+
+	logging.basicConfig(
+		filename = 'rate-me-im-famous.log', 
+		filemode = 'w', 
+		level = logging.DEBUG,
+		format = '%(asctime)s - %(levelname)s - %(message)s')
 
 	bridge = ITunesBridge()
 	tracks = bridge.getTracks()

@@ -55,3 +55,6 @@ target/
 
 # GhostDriver logs (from Selenium actions under phantomJS driver)
 ghostdriver.log
+
+# rate-me-im-famous logs
+rate-me-im-famous.log
