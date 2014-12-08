@@ -45,6 +45,6 @@ class GoogleRateFetcher(object):
 		# & is replaced by and
 		string = string.replace('&', 'and')
 		# then, everything that is not digit or alpha or whitespace is replaced with space (google doesn't search for space :))
-		string = re.sub(r'[^a-zA-Z0-9\s]*', ' ', string)
+		string = re.sub(r'[^a-zA-Z0-9\s]+', ' ', string)
 		logging.debug('Cleaned string %s', string)
 		return string
